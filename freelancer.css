@@ -1,3 +1,4 @@
+
 body{
   box-sizing:border-box;
  font-family: Tahoma;
@@ -5,6 +6,7 @@ body{
   min-height: 2277px;
   color:#202020;
   margin: 0px 0px;
+ 
 }
 
 /* Шапка */
@@ -17,7 +19,7 @@ body{
   position: fixed;
   left: 0px;
   top: 0px;
-  z-index:10;
+  z-index: 10;
 }
 
 .header_cntr{
@@ -29,6 +31,7 @@ font-size: 14px;
  flex-wrap: wrap;
 }
 .header_cntr img{
+  display: block;
   min-height: 650px;
 }
 .logo{
@@ -73,6 +76,7 @@ margin-top: 120px;
   align-items:flex-start;
 }
 .hero-img{
+  display: flex;
   position: relative;
   margin: 0px 0px;}
 
@@ -97,19 +101,20 @@ margin-top: 120px;
   justify-content: center;
   max-width: 523px;
   max-height: 455px;
+  margin-top: 140px; 
 }
 .author{
-  margin-top: 220px;
+  margin-top: 0px;
   margin-bottom: 28px;
     font-size: 24px;
     font-weight: 400;
     }
 
 .title{
+  margin-top: 0px;
   font-size: 54px;
   font-weight: bold;
   margin-bottom: 28px;
-  margin-top: 0px;
 }
 .subtitle {
  font-size: 24px;
@@ -117,13 +122,13 @@ font-weight: 400;
 font-family: Tahoma;
 max-width: 358px;
 margin-top: 0px;
-margin-bottom: 52px;}
+margin-bottom: 45px;}
 
 .info_book{
   display: flex;
   max-width: 450px;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   margin-top: 0px;
 }
 .info_book span{
@@ -137,7 +142,7 @@ margin-bottom: 52px;}
   max-width: 392px;
   justify-content: space-between;
   align-items:center;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   margin-top: 0px;
 }
 .price{
@@ -332,5 +337,119 @@ h5{
   object-fit: cover;
   width: 43px;
   height: 52px;
-  
 }
+
+@media (max-width: 767px){
+  body {width: 767px;} 
+
+  header{max-width: 767px;}
+
+  .header_cntr,
+  .hero-cntr,
+  .about-cntr,
+  .readers-cntr,
+  .footer_ctnr,
+  .info{
+    max-width: 560px;
+    margin-left: 100px; 
+    margin-right: 100px;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    gap:0px;
+  }
+
+  .nav{
+    display: none;} 
+
+ .logo, .login{
+  font-size: 14px;
+ }
+
+ .hero{
+  margin-top: 87px;}
+  
+ .hero-img{
+  position:static;
+  min-width: 560px;
+  margin-bottom: 60px;
+  object-fit:cover;
+ }
+
+ .hero-img img{
+  min-width:100%;
+ }
+ 
+ .sale_lable{
+  display: none;
+ }
+ 
+ .Info{
+  min-height: 387px;
+  margin-top: 0px;
+  margin-bottom: 78px;
+ }
+ .author{
+  display: block;
+  margin-top: 30px;
+  font-size: 22px;
+ }
+ .title{
+  font-size: 46px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+ } 
+.subtitle{
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+.info_book{
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+.price_fvrts{
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+.href_read,
+.href_buy{
+  height: 40px;
+  width: 200px;
+margin-top: 0px;
+margin-bottom: 80px;}
+
+.about-cntr{
+  margin-top: 80px;
+}
+.about-book{
+  margin-top: 0px;
+  margin-bottom: 70px;
+}
+.about-book h3{
+margin-top: 0px;
+font-size: 24px;
+}
+.about-author-cntr{
+  margin-top: 0px;
+  margin-bottom: 90px;  
+  align-items:center;
+}
+.readers_photo{margin-bottom: 85px;}
+
+body img:nth-child(4),
+body img:nth-child(5),
+body img:nth-child(6),
+body img:nth-child(10),
+body img:nth-child(11),
+body img:nth-child(12){
+  display: none;
+}
+h5{
+  margin-top: 0px;
+}
+.contacts{
+  margin-top: 55px;
+}
+}
+
+
+ 
